@@ -5,7 +5,7 @@
 ## Contents:
 
  - [Printing](#Printing)
- - [Defining Variables](#Variables)
+ - [Defining Variables](#Defining)
  - [If Statements](#If)
 
 ***
