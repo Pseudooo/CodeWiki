@@ -7,6 +7,9 @@
  - [Printing](#Printing)
  - [Conditions](#Conditions)
  - [If Statements](#If-Statements)
+ - [While Loops](#While-Loops)
+ - [For Loops](#For-Loops)
+ - [Arrays](#Arrays)
 
 ***
 
@@ -123,4 +126,137 @@ if(<condition>) {
 }else {
 	// Do something else
 }
+```
+
+## While Loops:
+
+#### Python:
+```python
+while <condition>:
+	# Do something
+```
+
+#### Java:
+```java
+while(<condition>) {
+	// Do something
+}
+```
+
+## For Loops:
+
+### Counting Loops:
+
+_Each of the following loops will run n times_
+
+#### Python:
+```python
+for i in range(n):
+	# Do something
+```
+
+#### Java:
+```java
+for(int i = 0; i < n; i++) {
+	// Do something
+}
+```
+
+### Modifying ranges:
+
+_Altering loops can be useful depending on your situation_
+
+#### Python:
+```python
+for i in range(<start_inclusive>, <end_exclusive>, <increment>):
+	# Do something
+```
+
+#### Java:
+```java
+for(int i = <start_inclusive>; i < <end_exclusive>; i = i + <increment>) {
+	// Do something
+}
+```
+
+### For each loops:
+
+#### Python:
+```python
+for i in <iterable>:
+	# Do something
+```
+
+#### Java:
+```java
+for(<ElementDataType> i : <iterable>) {
+	// Do something
+}
+```
+
+### General Case:
+
+_The following are generalized cases and less readable but useful for those who find it accessible_
+
+#### Python:
+```python
+for <LoopVariable> in range(<start_inclusive>, <end_exclusive>, <increment>):
+	# Do something
+```
+
+#### Java:
+```java
+for(<LoopVariableDeclaration>; <LoopCondition>; <LoopVariableOperation>) {
+	// Do something
+}
+```
+
+## Arrays:
+
+### Defining an empty array:
+
+#### Python:
+```python
+<Array> = []
+```
+
+#### Java:
+```java
+ArrayList<<DataType>> <Array> = new ArrayList<<DataType>>();
+```
+
+### Appending:
+
+#### Python:
+```python
+<Array>.append(<Value>)
+```
+
+#### Java:
+```java
+<Array>.add(<value>);
+```
+
+### Referencing Index:
+
+#### Python:
+```python
+<Variable> = <Array>[<Index>]
+```
+
+#### Java:
+```java
+<DataType> <Variable> = <Array>.get(<Index>);
+```
+
+### Removing Items:
+
+#### Python:
+```python
+<Array>.remove(<Item>)
+```
+
+#### Java:
+```java
+<Array>.remove(<Item>);
 ```
