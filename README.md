@@ -1,7 +1,7 @@
 # The Code Wiki
 =====
 
-[Printing][Printing]
+[Printing](https://github.com/Pseudooo/CodeWiki#Printing)
 
 ### Printing
 In python to print the string "Hello World" to the console we use:
