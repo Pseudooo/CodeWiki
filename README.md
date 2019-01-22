@@ -6,6 +6,7 @@
 
  - [Printing](#Printing)
  - [Inputs](#Inputs)
+ - [Casting](#Casting)
  - [Conditions](#Conditions)
  - [If Statements](#If-Statements)
  - [While Loops](#While-Loops)
@@ -40,6 +41,33 @@ System.out.println("Hello World!");
 Scanner sc = new Scanner(System.in);
 System.out.print(<Prompt>);
 <Variable> = sc.next();
+```
+
+## Casting:
+
+_Casting is the process of taking a variable or value that is one data type and converting it to another data type_
+
+#### Python:
+```python
+<Variable> = <DataType>(<Value>)
+```
+
+#### Java:
+```java
+<DataType> <Variable> = (<DataType>) <Value>
+```
+
+_In java only some data types will allow casting from one type to another, so alternatively parsing is using_
+_I'll give an example of parsing an int and a double from a string_
+
+#### Casting int from String
+```java
+int value = Integer.parseInt(<StringValue>);
+```
+
+#### Casting double from String
+```java
+double value = Double.parseDouble(<StringValue>);
 ```
 
 ## Conditions
