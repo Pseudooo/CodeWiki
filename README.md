@@ -5,6 +5,7 @@
 ## Contents:
 
  - [Printing](#Printing)
+ - [Inputs](#Inputs)
  - [Conditions](#Conditions)
  - [If Statements](#If-Statements)
  - [While Loops](#While-Loops)
@@ -25,6 +26,20 @@ print("Hello World!")
 #### Java:
 ```java
 System.out.println("Hello World!");
+```
+
+## Inputs:
+
+#### Python:
+```python
+<UserInput> = input(<Prompt>)
+```
+
+#### Java:
+```java
+Scanner sc = new Scanner(System.in);
+System.out.print(<Prompt>);
+<Variable> = sc.next();
 ```
 
 ## Conditions
