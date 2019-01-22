@@ -5,6 +5,7 @@
 ## Contents:
 
  - [Printing](#Printing)
+ - [Conditions](#Conditions)
  - [If Statements](#If-Statements)
 
 ***
@@ -21,6 +22,48 @@ print("Hello World!")
 #### Java:
 ```java
 System.out.println("Hello World!");
+```
+
+## Conditions
+
+_In a programmmatic context a conditional expression is an expression that can be evaluated to a boolean value (True or False), we most commonly use these in if statements_
+
+### Numeric Types:
+
+#### Python:
+```python
+<NumericValue> == <NumericValue>
+```
+
+#### Java:
+```java
+<NumericValue> == <NumericValue>
+```
+
+### Strings:
+
+#### Case Sensitive:
+
+#### Python:
+```python
+<StringValue> == <StringValue>
+```
+
+#### Java:
+```java
+<StringValue>.equals(<StringValue>)
+```
+
+#### Ignoring Case:
+
+#### Python:
+```python
+<StringValue>.lower() == <StringValue>.lower()
+```
+
+#### Java:
+```java
+<StringValue>.equalsIgnoreCase(<StringValue>)
 ```
 
 ## If Statements:
