@@ -4,9 +4,9 @@
 
 ## Contents:
 
-[Printing](#Printing)
-[Defining Variables](#Variables)
-[If Statements](#If)
+ - [Printing](#Printing)
+ - [Defining Variables](#Variables)
+ - [If Statements](#If)
 
 ***
 
