@@ -1,64 +1,48 @@
-# The Code Wiki
+# Python vs Java
 
 ***
 
 ## Contents:
 
  - [Printing](#Printing)
- - [Defining Variables](#Defining)
- - [If Statements](#If)
+ - [If Statements](#If-Statements)
 
 ***
 
-### Printing
+## Printing:
 
-##### Python:
+_Printing "Hello World!" to the console_
+
+#### Python:
 ```python
 print("Hello World!")
 ```
 
-##### Java:
+#### Java:
 ```java
 System.out.println("Hello World!");
 ```
 
-***
+## If Statements:
 
-### Defining Variables
+### Single If Statements:
 
-
-##### Python:
-```python
-<Variable> = <Value>
-```
-
-##### Java:
-```java
-<DataType> <Variable> = <Value>
-```
-
-***
-
-### If Statements
-
-#### Single If Statements:
-
-##### Python:
+#### Python:
 ```python
 if <condition>:
 	# Do something
 ```
 
-##### Java:
+#### Java:
 ```java
 if(<condition>) {
 	// Do something
 }
 ```
 
-#### If else Statements:
+### If Else Statements:
 
-##### Python:
+#### Python:
 ```python
 if <condition>:
 	# Do something
@@ -66,34 +50,34 @@ else:
 	# Do something else
 ```
 
-##### Java:
+#### Java:
 ```java
 if(<condition>) {
 	// Do something
-}else{
-	// Do something else
+}else {
+	// Do something
 }
 ```
 
-#### Stacked else ifs
+### Else If Statements:
 
-##### Python:
+#### Python:
 ```python
 if <condition>:
 	# Do something
 elif <condition>:
-	# Do something else
+	# Do something
 else:
 	# Do something else
 ```
 
-##### Java:
+#### Java:
 ```java
 if(<condition>) {
 	// Do something
 }else if(<condition>) {
 	// Do something
 }else {
-	// Do something
+	// Do something else
 }
 ```
