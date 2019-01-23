@@ -379,12 +379,12 @@ _Writing numbers in scientific notation_
 
 #### Python:
 ```python
-"Scientific notation: {:1.3e}".format(314159265358979)
+"Scientific notation: {:.3e}".format(314159265358979)
 ```
 
 #### Java:
 ```java
-String.format("Scientific Notation: %1.3e", 314159265358979)
+String.format("Scientific Notation: %.3e", 314159265358979)
 ```
 
 _A full list of string formatting options for java can be found [here](https://dzone.com/articles/java-string-format-examples)_
