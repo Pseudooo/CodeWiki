@@ -12,6 +12,7 @@
  - [While Loops](#While-Loops)
  - [For Loops](#For-Loops)
  - [Arrays](#Arrays)
+ - [String Formatting](#String-Formatting)
 
 ***
 
@@ -303,3 +304,87 @@ ArrayList<<DataType>> <Array> = new ArrayList<<DataType>>();
 ```java
 <Array>.remove(<Item>);
 ```
+
+## String Formatting:
+
+_Python has an extremely simple approach to string formatting so there will be a much greater quantity of java examples here_
+
+_It's also very hard to give arbitrary examples so I'll instead of provide functional examples_
+
+### Formatting Variables into Strings:
+
+_The following examples will return a string formatted as:_
+`I am John and I am 50 years old.`
+
+#### Python:
+```python
+"I am {} and I am {} years old.".format("John", 50)
+```
+
+#### Java:
+```java
+String.format("I am %s and I am %s years old.", "John", 50)
+```
+
+_In both java and python the variables will be placed in the order of occurence in the string_
+
+### Justification and Width:
+
+_Setting the minimum width of a variable to be formatted:_
+
+#### Python:
+```python
+"This has a width of 10: {:10}".format(<Variable>)
+```
+
+#### Java:
+```java
+String.format("This has a width of 10: %10s", <Variable>)
+```
+
+_All above examples will be right justified by default but we can use left justification if we so require:_
+
+#### Python:
+```python
+"This is left justified with a width of 10: {:<10}".format(<Variable>)
+```
+
+#### Java:
+```java
+String.format("This is left justified with a width of 10: %-10s", <Variable>)
+```
+
+_Python allows for formatted strings to be center justified but java does not_
+
+#### Centre Justified Text Python:
+```python
+"{:^25}".format("Centered!")
+```
+
+### Formatting Decimals:
+
+_Reducing decimal numbers that are shown:_
+
+#### Python:
+```python
+"Showing 4 decimal places: {:.4f}".format(3.14159265358979)
+```
+
+#### Java:
+```java
+String.format("Showing 4 decimal places: %.4f", 3.14159265358979)
+```
+
+_Writing numbers in scientific notation_
+
+#### Python:
+```python
+"Scientific notation: {:1.3e}".format(314159265358979)
+```
+
+#### Java:
+```java
+String.format("Scientific Notation: %1.3e", 314159265358979)
+```
+
+_A full list of string formatting options for java can be found [here](https://dzone.com/articles/java-string-format-examples)_
