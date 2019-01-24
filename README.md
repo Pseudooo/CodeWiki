@@ -314,6 +314,7 @@ _It's also very hard to give arbitrary examples so I'll instead of provide funct
 ### Formatting Variables into Strings:
 
 _The following examples will return a string formatted as:_
+
 `I am John and I am 50 years old.`
 
 #### Python:
