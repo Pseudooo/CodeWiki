@@ -462,6 +462,8 @@ else:
 try{
 	// Attempt code
 }catch(<ExceptionType> e) {
-	// Run this code if error occurs
+	// Run this code if the exception occurs
+}catch(<ExceptionType> e) {
+	// Run this code if the exception occurs
 }
 ```
