@@ -1,19 +1,20 @@
 body {
 	margin: 0;
+	background: #222629;
 }
 
 #navbar {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
-	width: 20%;
+	width: 280px;
 	height: 100%;
 	background-color: #222629;
 	border-right: 4px solid #474B4F;
 	position: fixed;
 }
 
-#navbar li a{
+#navbar li a {
 	padding: 10px;
 	display: block;
 	background-color: #222629;
@@ -25,10 +26,30 @@ body {
 
 #navbar li a.active {
 	background-color: #474B4F;
-	color: #000;
+	color: #9C9FA1;
 }
 
 #navbar li a:hover:not(.active) {
 	background-color: #86C232;
 	color: #222629;
 }
+
+#navbar.collapsed {
+	left: -280px;
+}
+
+.content {
+	margin-left: 285px;
+}
+
+.content.collapsed {
+	margin-left: 5px;
+}
+
+#nav-button {
+	width: 32px;
+	height: 32px;
+	cursor: pointer;
+}
+
+
