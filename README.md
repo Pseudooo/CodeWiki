@@ -276,7 +276,9 @@ for(int i = 0; i < 10; i++) {
 System.out.println(i);
 ```
 
-_Is not functional, this is a result of something called scope, you can read more about it [here](https://www.geeksforgeeks.org/variable-scope-in-java/)_
+_Is not functional, this is a result of something called scope, you can read more about it:_
+ - [Python Scope](https://matthew-brett.github.io/teaching/global_scope.html)
+ - [Java Scope](https://www.geeksforgeeks.org/variable-scope-in-java/)
 
 ## Arrays:
 
