@@ -53,6 +53,30 @@ body {
 	cursor: pointer;
 	margin-left: 285px;
 	transition: margin-left 0.3s;
+	position: fixed;
 }
 
+.header {
+	background-color: #222629;
+	border-bottom: 4px solid #474B4F;
+	width: 100%;
+	height: auto;
+	padding: 15px;
+}
+
+.header h1 {
+	margin: 0;
+	font-weight: bold;
+	font-size: 58px;
+	text-align: right;
+	color: #FFFFFF;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.content{
+	padding: 35px;
+}
 
