@@ -12,6 +12,9 @@ body {
 	background-color: #222629;
 	border-right: 4px solid #474B4F;
 	position: fixed;
+	transition: width 0.3s;
+	overflow-x: hidden;
+	overflow-y: auto;
 }
 
 #navbar li a {
@@ -19,9 +22,10 @@ body {
 	display: block;
 	background-color: #222629;
 	color: #86C232;
-	text-align: right;
-	padding: 8px 16px;
+	text-align: left;
+	padding: 8px 0px 16px 20px;
 	text-decoration: none;
+	font-size: 24px;
 }
 
 #navbar li a.active {
@@ -35,21 +39,19 @@ body {
 }
 
 #navbar.collapsed {
-	left: -280px;
+	width: 0;
 }
 
-.content {
-	margin-left: 285px;
-}
-
-.content.collapsed {
+#nav-button.collapsed {
 	margin-left: 5px;
 }
 
 #nav-button {
-	width: 32px;
-	height: 32px;
+	width: 44px;
+	height: 44px;
 	cursor: pointer;
+	margin-left: 285px;
+	transition: margin-left 0.3s;
 }
 
 
