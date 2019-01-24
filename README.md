@@ -378,6 +378,10 @@ String.format("Showing 4 decimal places: %.4f", 3.14159265358979)
 
 _Writing numbers in scientific notation_
 
+_The following numbers will be 314159265358979 formatted to 3 decimal places with one leading number, like so:_
+
+`3.142e+14`
+
 #### Python:
 ```python
 "Scientific notation: {:.3e}".format(314159265358979)
