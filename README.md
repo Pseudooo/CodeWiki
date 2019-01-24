@@ -255,6 +255,29 @@ for(<LoopVariableDeclaration>; <LoopCondition>; <LoopVariableOperation>) {
 }
 ```
 
+### A Note About Scope:
+
+_In python the following is a perfectly functional piece of code_
+
+```python
+for i in range(10):
+	x = i
+
+print(x)
+```
+
+_However, its literal equivalent in Java:_
+
+```java
+for(int i = 0; i < 10; i++) {
+	int x = i;
+}
+
+System.out.println(i);
+```
+
+_Is not functional, this is a result of something called scope, you can read more about it [here](https://www.geeksforgeeks.org/variable-scope-in-java/)_
+
 ## Arrays:
 
 ### Defining an empty array:
