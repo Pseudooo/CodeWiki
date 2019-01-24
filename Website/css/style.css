@@ -23,7 +23,12 @@ body {
 	text-decoration: none;
 }
 
-#navbar li a:hover {
+#navbar li a.active {
+	background-color: #474B4F;
+	color: #000;
+}
+
+#navbar li a:hover:not(.active) {
 	background-color: #86C232;
 	color: #222629;
 }
