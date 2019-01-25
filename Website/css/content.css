@@ -1,0 +1,33 @@
+.content {
+	width: 1000px;
+	height: auto;
+	margin:0 auto 50px auto;
+	border-left: 5px solid #474B4F;
+	border-right: 5px solid #474B4F;
+	border-bottom: 5px solid #474B4F;
+	color: #FFF;
+	text-align: left;
+	overflow-y: auto;
+}
+
+.content h3 {
+	margin: 5px;
+}
+
+.content pre {
+	margin: 5px 15px;
+}
+
+.content p {
+	display: block;
+	margin: 5px 15px;
+}
+
+.content img {
+	display: block;
+	margin-left: 15px;
+}
+
+.content pre {
+	margin-left: 15px;
+}

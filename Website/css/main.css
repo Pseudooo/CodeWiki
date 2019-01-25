@@ -1,0 +1,94 @@
+body {
+	margin: 0;
+	background: #222629;
+	font-family: "Ubuntu";
+}
+
+#navbar {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 280px;
+	height: 100%;
+	background-color: #222629;
+	border-right: 4px solid #474B4F;
+	position: fixed;
+	transition: width 0.3s;
+	overflow-x: hidden;
+	overflow-y: auto;
+	white-space: nowrap;
+}
+
+#navbar li a {
+	padding: 10px;
+	display: block;
+	background-color: #222629;
+	color: #86C232;
+	text-align: left;
+	padding: 8px 0px 16px 20px;
+	text-decoration: none;
+	font-size: 24px;
+}
+
+#navbar li a.active {
+	background-color: #474B4F;
+	color: #9C9FA1;
+}
+
+#navbar li a:hover:not(.active) {
+	background-color: #86C232;
+	color: #222629;
+}
+
+#navbar.collapsed {
+	width: 0;
+}
+
+#nav-button.collapsed {
+	margin-left: 5px;
+}
+
+#nav-button {
+	width: 44px;
+	height: 44px;
+	cursor: pointer;
+	margin-left: 285px;
+	transition: margin-left 0.3s;
+	position: fixed;
+}
+
+.header {
+	background-color: #222629;
+	border-bottom: 4px solid #474B4F;
+	width: 100%;
+	height: auto;
+	padding: 15px;
+}
+
+.header h1 {
+	margin: 0;
+	font-weight: bold;
+	font-size: 58px;
+	text-align: right;
+	color: #FFFFFF;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #6B6E70; 
+}
+ 
+::-webkit-scrollbar-thumb:hover {
+  background: #86C232; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: #61892F; 
+}

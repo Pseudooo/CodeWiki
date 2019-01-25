@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+
+		<meta charset="utf-8">
+		<meta author="Mitchell Wright">
+		<meta description="A website to aid the Python to Java transition!">
+
+		<link rel="stylesheet" href="css/main.css">
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+		<link rel="stylesheet" href="css/content.css">
+
+		<script src="js/navbar.js"></script>
+
+		<title>Python vs Java</title>
+
+	</head>
+
+	<body>
+
+		<ul id="navbar">
+
+			<li><a href="index.html">Home</a></li>
+			<li><a class="active">Inputs and Outputs</a></li>
+			<li><a href="variables.html">Variables</a></li>
+			<li><a href="ifstatements.html">If Statements</a></li>
+			<li><a href="math.html">Maths</a></li>
+			<li><a href="ArrayLists.html">ArrayLists</a></li>
+			<li><a href="classesinstances.html">Classes and Instances</a></li>
+			<li><a href="methods-classes.html">Methods</a></li>
+			<li><a href="Enums.html">Enums</a></li>
+
+		</ul>
+		
+		<img src="img/menu-icon.png" onclick="toggleNav()" id="nav-button">
+
+		<div class="header">
+			<h1 class="title">Inputs and Outputs</h1>
+		</div>
+
+		<div class="content">
+
+			<!-- THIS IS THE GENERAL PARAGRAPH -->
+			<h3>General</h3>
+			<p>When making applications we need to have some degree of interaction with the user and one method of getting this
+			interaction is to handle inputs and outputs within your program.</p>
+
+			<!-- THIS IS THE PRINTING PARAGRAPH -->
+			<h3>Printing</h3>
+			<p>When we need the user that's using the terminal of our program we can make use of the ability to print strings to
+			our console. The syntax in Java is like so:</p>
+
+			<!-- Image of sysoutln -->
+			<img src="img/Java/SystemPrintlnSyntax.png" width="auto" height="20px">
+
+			<p>In doing this we've gained the ability to output messages to our console! On its own however this is a very restrictive
+			feature and doesn't give a lot of merit to our application. Once we gain the ability to take inputs our programs can become
+			much more complex and interactive!</p>
+			<p>It should be noted that the bit that's being printed, in this case Hello!, is a string which is why it's encased within
+			speechmarks.</p>
+			<p>If you don't want a new line to be placed automatically at the end of your print statement but instead have the next print
+			to follow onto the same line then the following style of print can be used:</p>
+
+			<!-- Image of sysout -->
+			<img src="img/Java/SystemPrintSyntax.png" width="auto" height="20px">
+			<p>We can combine these sometimes in order to format strings together, so if we were to run the following piece of code within
+			our program:</p>
+
+			<!-- Image of sysout and sysoutln example -->
+			<img src="img/Java/PrintExampleInputsOutputs.png" width="auto" height="50px">
+			<p>Which would produce the following output: </p>
+<pre><code>
+This is line 1! This is still line 1!
+This is line 2!
+</code></pre>
+
+			<!-- THIS IS THE INPUTS PARAGRAPH -->
+			<h3>Inputs</h3>
+			<p>In order to make our ability to print more useful we can make use of the Scanner in Java to ask the user to enter details.
+			However the scanner takes a little bit more work, programmatically, to setup.</p>
+			<p>So if we want to create a Scanner that we can use within our program that will take inputs from the console. The syntax to
+			do this is as follows:</p>
+			<img src="img/Java/CreateTerminalScannerSyntax.png" width="auto" height="20px">
+			<p>The above line has created a scanner object that is called "sc" and is setup to take inputs from the terminal. This is declared
+			by placing "System.in" within the parethesis.</p>
+			<p>Now that the scanner object has been created we're free to use it! So if we wanted to make a simple application that would
+			ask the user for their name and then print their name back to them we could use the following code:</p>
+			<img src="img/Java/GettingUsersNameExample.png" width="auto" height="50px">
+			<p>Line 1 would create the scanner item, sc, that's setup to read the inputs from the terminal of the prgram as previously
+			mentioned.</p>
+			<p>Line 2 creates a variable of type string (<i>Don't worry about variables too much, they're covered in <a href="variables.html">variables</a></i>)
+			which is stored by the value of sc.next(). sc.next() essentially pauses the program until the user pushes the enter key into the terminal
+			and then returns the value of what's entered by them.</p>
+			<p>Line 3 then prints a combination of the string Hello, and adds the name variable we previously declared on the end. So if I were
+			to run this program it wouldn't do anything initially and I'd be presented with a blank terminal. This is because we're currently at the
+			pause on line 2 where the program is waiting for the user to enter some piece of data. If I then enter my name, Mitchell, it will print the
+			following text:</p>
+<pre><code>
+Hello, Mitchell
+</code></pre>
+
+			<!-- Using prints to make prompts-->
+			<h3>Prompting Inputs</h3>
+			<p>When we used the scanner on its own to collect a single input from the user it wasn't very user friendly. It just presented us with
+			a blank screen and we were expected to know what to do. So what if we wanted to modify the program above so that the user is prompted to
+			enter their name, we're able to do this by using the print statement.</p>
+			<p>If we add the following line of code above our previous code:</p>
+			<img src="img/Java/SystemPrintPromptExample.png" width="auto" height="20px">
+			<p>Then instead of simply having a blank screen where we're expected to enter our name a piece of text will appear saying Please enter your name:
+			and when we start typing it'll appear after the colon. Which is a much more user friendly way to do things as the user isn't expected to
+			know what to do instinctively.</p>
+
+		</div>
+
+	</body>
+
+</html>

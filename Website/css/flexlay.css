@@ -1,0 +1,28 @@
+.content {
+
+	width: 100%;
+	height: 100%;
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: flex-start;
+	align-content: flex-start;
+
+}
+
+.flex-contain {
+	border-radius: 15px;
+	background-color: #61892F;
+	margin: 15px;
+	padding: 15px;
+}
+
+.container-title {
+	text-align: center;
+	font-size: 22px;
+	color: #FFF;
+	margin-bottom: 5px;
+	margin-top: 0;
+}

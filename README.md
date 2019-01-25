@@ -13,6 +13,7 @@
  - [For Loops](#For-Loops)
  - [Arrays](#Arrays)
  - [String Formatting](#String-Formatting)
+ - [Error Handling](#Error-Handling)
 
 ***
 
@@ -153,9 +154,9 @@ if(<condition>) {
 
 #### Python:
 ```python
-if <condition>:
+if <Condition>:
 	# Do something
-elif <condition>:
+elif <Condition>:
 	# Do something
 else:
 	# Do something else
@@ -163,12 +164,33 @@ else:
 
 #### Java:
 ```java
-if(<condition>) {
+if(<Condition>) {
 	// Do something
-}else if(<condition>) {
+}else if(<Condition>) {
 	// Do something
 }else {
 	// Do something else
+}
+```
+
+_Java offers a replacement of a bunch of else if statements that's called a switch statement that is not available in python_
+
+_It is like so:_
+
+```java
+switch(<Value>) {
+	case <Value>:
+		// Do stuff
+		break;
+	case <Value>:
+		// Do stuff
+		break;
+	case <Value>:
+		// Do stuff
+		break;
+	default:
+		// Do other stuff
+		break;
 }
 ```
 
@@ -176,13 +198,13 @@ if(<condition>) {
 
 #### Python:
 ```python
-while <condition>:
+while <Condition>:
 	# Do something
 ```
 
 #### Java:
 ```java
-while(<condition>) {
+while(<Condition>) {
 	// Do something
 }
 ```
@@ -237,6 +259,8 @@ for(<ElementDataType> i : <iterable>) {
 	// Do something
 }
 ```
+
+_An iterable data type is a form of data that can be run through sequentially, see more [here](https://hackernoon.com/how-iterables-actually-work-in-python-65c36ff91c1e)_
 
 ### General Case:
 
@@ -418,3 +442,28 @@ String.format("Scientific Notation: %.3e", 314159265358979)
 ```
 
 _A full list of string formatting options for java can be found [here](https://dzone.com/articles/java-string-format-examples)_
+
+## Error Handling
+
+_When an error occurs within a piece of code the error will cause the program to crash, errors however can be handelled_
+
+#### Python:
+```python
+try:
+	# Attempt stuff
+except:
+	# Run this code if error occurs
+else:
+	# Run this code if no error occurs
+```
+
+#### Java:
+```java
+try{
+	// Attempt code
+}catch(<ExceptionType> e) {
+	// Run this code if the exception occurs
+}catch(<ExceptionType> e) {
+	// Run this code if the exception occurs
+}
+```
