@@ -10,24 +10,14 @@
 	overflow-y: auto;
 }
 
-.content h3 {
-	margin: 5px;
-}
-
-.content pre {
-	margin: 5px 15px;
-}
-
-.content p {
-	display: block;
+.content * {
 	margin: 5px 15px;
 }
 
 .content img {
 	display: block;
-	margin-left: 15px;
 }
 
-.content pre {
-	margin-left: 15px;
+.content p {
+	display: block;
 }
