@@ -77,25 +77,33 @@ This is line 2!
 
 			<!-- THIS IS THE INPUTS PARAGRAPH -->
 			<h3>Inputs</h3>
+
 			<p>In order to make our ability to print more useful we can make use of the Scanner in Java to ask the user to enter details.
 			However the scanner takes a little bit more work, programmatically, to setup.</p>
+
 			<p>So if we want to create a Scanner that we can use within our program that will take inputs from the console. The syntax to
 			do this is as follows:</p>
+
 			<img src="img/Java/CreateTerminalScannerSyntax.png" width="auto" height="20px">
+
 			<p>The above line has created a scanner object that is called "sc" and is setup to take inputs from the terminal. This is declared
 			by placing "System.in" within the parethesis.</p>
+
 			<p>Now that the scanner object has been created we're free to use it! So if we wanted to make a simple application that would
 			ask the user for their name and then print their name back to them we could use the following code:</p>
+
 			<img src="img/Java/GettingUsersNameExample.png" width="auto" height="50px">
+
 			<p>Line 1 would create the scanner item, sc, that's setup to read the inputs from the terminal of the prgram as previously
 			mentioned.</p>
+
 			<p>Line 2 creates a variable of type string (<i>Don't worry about variables too much, they're covered in <a href="variables.html">variables</a></i>)
 			which is stored by the value of sc.next(). sc.next() essentially pauses the program until the user pushes the enter key into the terminal
 			and then returns the value of what's entered by them.</p>
+
 			<p>Line 3 then prints a combination of the string Hello, and adds the name variable we previously declared on the end. So if I were
 			to run this program it wouldn't do anything initially and I'd be presented with a blank terminal. This is because we're currently at the
-			pause on line 2 where the program is waiting for the user to enter some piece of data. If I then enter my name, Mitchell, it will print the
-			following text:</p>
+			pause on line 2 where the program is waiting for the user to enter some piece of data. If I then enter my name, Mitchell, it will print the following text:</p>
 <pre><code>
 Hello, Mitchell
 </code></pre>
