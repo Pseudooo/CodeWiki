@@ -43,38 +43,33 @@
 
 			<!-- THIS IS THE GENERAL PARAGRAPH -->
 			<h3>General</h3>
-			<p>When making applications we generally need some degree of interaction with the user, and one of the most basic methods
-			of achieving this level of interaction is to handle the program's inputs and outputs via the terminal.</p>
+			<p>When making applications we generally need to have some degree of interaction with the user, and one of the most basic methods of achieving this level of interaction is to output data to the terminal and allow our user to input data to our program when we need it. So doing both of these is what will be covered in this page.</p>
 
 			<!-- THIS IS THE PRINTING PARAGRAPH -->
-			<h3>Printing</h3>
-			<p>When we want to show the user some piece of information via the terminal in these simple applications we make use of
-			our ability to print to the console. The Syntax to print the String, "Hello!" to the console, in Java, is:</p>
+			<h3>Printing to the Terminal</h3>
+			<p> When we want/need to show the user of our program some piece of information via the terminal we make use of our ability to print to the console. So, the syntax to print the String "Hello!", in Java, is as follows:</p>
 
 			<!-- Image of sysoutln -->
 			<img src="img/Java/SystemPrintlnSyntax.png" width="auto" height="24em">
 
-			<p>With this basic instruction that we are now able to use we've gained a lot of potential in creating simple applications
-			in Java however we're still very restricted on what we can make as we can't actually interact with the user quite yet. However,
-			once we cover collecting inputs from the User our program can get exponentially more complex and interactive.</p>
+			<p>With this basic instruction we are now able to print data to our program's terminal. On it's own it's a pretty restrictive feature but remains a fundamental part of learning any programming language.</p>
 
 			<p>It should be noted that the bit that's being printed, in this case Hello!, is a string which is why it's encased within
-			speechmarks.</p>
+			speechmarks. (<i>String is a Data Type and will be covered further in <a href="variables.html">Variables</a></i>)</p>
 
-			<p>It should be noted that the above print syntax places a new line at the end of the text displayed automatically. This can be
-			avoided if needed however by using an alternative syntax of the instruction. We simply remove the ln (Which is indicative of line)
-			and instead put:</p>
+			<p>It should be noted that the print statement listed above places a new line at the end of the text that is printed automatically. If this is an undesired effect then it can be negated by simply removing the ln (<i>Which stands of line i.e. print line</i>) in the statement, like so:</p>
 
 			<!-- Image of sysout -->
 			<img src="img/Java/SystemPrintSyntax.png" width="auto" height="24em">
 
 			<p>By using a mixture of the two print statements we can start formatting text together a bit to make things a bit more
 			aesthetically pleasing/easier to use for the user. We can further look at this like so:</p>
+			<p>By playing around with the two print statements we can notice a number of things that remind of their nature, for example if we were to run the following program:</p>
 
 			<!-- Image of sysout and sysoutln example -->
 			<img src="img/Java/PrintExampleInputsOutputs.png" width="auto" height="64em">
 
-			<p>Which would produce the following output: </p>
+			<p>It would produce the following output: </p>
 <pre><code>
 This is line 1! This is still line 1!
 This is line 2!
@@ -83,31 +78,25 @@ This is line 2!
 			<!-- THIS IS THE INPUTS PARAGRAPH -->
 			<h3>Inputs</h3>
 
-			<p>In order to make an interactive application we need to be able to take inputs from our user. We can do this via the console,
-			in Java, by using the Scanner.</p>
+			<p>In order to make an interactive application we need to be able to take inputs from our user. We can do this via the console, in Java, by using the Scanner package. Before we're able to to actually use the Scanner however we need to a bit of set-up if you like. This just means that we're going to create a Scanner within our scope so that we can use it when we need.</p>
 
-			<p>So, in order to create a scanner object, named sc, we use the following piece of code:</p>
+			<p>So, to create a Scanner within our scope, named sc, we use the following piece of code:</p>
 
 			<img src="img/Java/CreateTerminalScannerSyntax.png" width="auto" height="24em">
 
-			<p>So here we've created a new <em>instance</em> of the Scanner class and called it sc. However, the Scanner isn't exclusively for
-			terminal applications so we need to place System.in within the parenthesis in order to tell it that we're going to be entering
-			data via the terminal</p>
+			<p>In the above code we create a Scanner item called sc. Scanners can be used to do a number of different things however so we need to tell our program that we want to take the Data from the inputs of the terminal, which is what System.in does within the brackets.<p>
 
-			<p>Now that the Scanner object has been created (<i>Technical term is instantiated</i>) we're free to use it! So, if we were
-			going to make a simple application that would ask the user for their name and then print it back to them we would write the
-			following code:</p>
+			<p>Now that we have the Scanner object created (<i>The technical term is instantiated</i>) we're able to use it to collect inputs from the user! So we're going to make a very simple application that will take the user's name and print it back to them. To do this we write the following code:</p>
 
 			<img src="img/Java/GettingUsersNameExample.png" width="auto" height="64em">
 
-			<p>Line 1 creates the scanner item in order to read text inputted via the program's terminal.
+			<p>Line 1 creates the Scanner object such that we're able to use it to read text that is inputted into the program via the program's terminal as previously explained</p>
 
-			<p>Line 2 creates a String variable (<i>Variables and data types will be covered further in <a href="variables.html">variables</a></i>)
-			and assigns a value that's inputted by the user from the Scanner.</p>
+			<p>Line 2 creates a String variable (<i>Variables and their respective data types will be covered further in <a href="variables.html">variables</a></i>) and assigns the value that's inputted by the user from the terminal.</p>
 
-			<p>Line 3 then prints the string "Hello, " and adds the value of the variable that we defined and assigned on line 2.</p>
+			<p>Line 3 then prints the String "Hello, " and joins it with the String that is entered via the teriminal (<i>Technical term for joining of strings is concatenation</i>)</p>
 
-			<p>If I were to run this program and enter my name, Mitchell, then the following output will be displayed:</p>
+			<p>If I then run this program and enter my name, Mitchell, it would create the following output:</p>
 
 <pre><code>
 Hello, Mitchell
@@ -116,19 +105,14 @@ Hello, Mitchell
 			<!-- Using prints to make prompts-->
 			<h3>Prompting Inputs</h3>
 
-			<p>When we used the scanner in the previous piece of code it wasn't very informative or user friendly. We only knew we were supposed to
-			enter our name because we wrote the code with that intention. If we were to give the same program to someone else to use then they'd be
-			presented with a blank prompt and they'd have no idea what they're supposed to enter. In order to resolve this we can use prompts to
-			instruct the user what they're supposed to enter, like for example "Please enter your name: ". Which instructs the user what they're 
-			supposed to do.</p>
+			<p>When we used the Scanner in the previous piece of code it wasn't very informative or user friendly. We only knew that we were supposed to enter our name because we wrote the code with that intention. If someone else were to run this program without any insight into the code they would have no idea what they're supposed to enter. So, to resolve this we are going make a prompt that will instruct the user to enter their name.</p>
+			<p>A prompt is generally just a piece of informative text that tells the user what they're supposed to enter.</p>
 
-			<p>If we add the following line of code above our previous code:</p>
+			<p>If we insert the following line of code into our program between lines 1 and 2</p>
 
 			<img src="img/Java/SystemPrintPromptExample.png" width="auto" height="24em">
 
-			<p>Now instead of having a blank screen when the user is expected to enter their name, a piece of text will appear prior to this
-			instructing the user to enter their name. Once we start typing it will appear after the string we've printed because we didn't
-			include the new line part of the print statement.</p>
+			<p>Now instead of simply having a blank screen when the user is expected to enter their name a piece of text will appear prior to them entering anything, instructing the user to enter their name. Once the user starts typing their name it will be placed after the string that we entered because we used a print statement instead of a println statement. Meaning that no new line is started by the print statement.</p>
 
 		</div>
 
