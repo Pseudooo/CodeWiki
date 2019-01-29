@@ -12,9 +12,10 @@
 
 .content * {
 	margin: 5px 15px;
+	margin-left: 5px 15px;
 }
 
-.content img {
+.content img{
 	display: block;
 }
 
