@@ -46,7 +46,8 @@
 
 			<p>When writing programs we often need to store little pieces of information throughout our code, this is what variables exist for. A variable is a piece of arbitrary data and we can assign our own values to it as and when we please.</p>
 
-			<h3>Data Types</h3>
+			<!-- Creation, Data Types and Initialisation-->
+			<h3>Creating Variables and Data Types</h3>
 
 			<p>When creating a variable in Java you also need to give a Data Type, any variable that is defined will always be that data type and can not take any other type of data. So, for example, if we made a variable and gave it an int (Integer) type that means that we can't then assign a String value to it.</p>
 
@@ -65,7 +66,33 @@
 
 			<img src="img/Java/CreateMyAgeInit19.PNG" width="auto" height="24em">
 
-			<p>This variable, MyAge, is now defined within the local scope.
+			<p>This variable, MyAge, is now defined within its block's scope. This means that we can call for it's value or reassign it anywhere in that block.</p>
+
+			<p>If we instead wanted to create a String variable, called name, and with an initial value of my name we'd write the following code:</p>
+
+			<img src="img/Java/CreateMyNameInitMitchell.PNG" width="auto" height="24em">
+
+			<p>We follow the same pattern for creating all variables of all Types and the main Data Types that we're going to be using are listed above.</p>
+
+			<h3>Casting and Parsing</h3>
+
+			<p>In strongly typed languages such as Java it's not uncommon that we have a variable that's of one data type and we want to convert it into another data type. The process of doing this is called Casting, so if we had a variable that had a type double and we wanted to convert it to an integer we would have to cast the variable to an integer</p>
+
+			<p>So, using this example, if we had a double value and we wanted to cast it to an integer variable, the code would be like this:</p>
+
+			<img src="img/Java/CastingDoubleToInt.PNG" width="auto" height="42em">
+
+			<p>Line 1 creates a double variable and initalizes it with the value 1234.56789</p>
+			
+			<p>Line 2 then creates an integer variable and intializes it with the value of 1234.56789 casted to integer. The casting of an integer value simply removes all data after the decimal point, making it an integer. So, the integer variable would contain the value 1234</p>
+
+			<p>This style of casting can be used for any variables that <em>allow</em> casting, the reason we were allowed to cast from double to int is because they're both inherently numeric types. We can't however use casting to convert a String into a double or a String into an integer. This is where parsing is required.</p>
+
+			<p>If we want to convert an integer for example that is encased in a String (Like potentially from an input) then we need to <em>Parse</em> it. The syntax to parse an integer from a string in Java is:</p>
+
+			<img src="img/Java/ParsingIntegerToString.PNG" width="auto" height="18em">
+
+			<p>The above code is classed as "dangerous" and therefore many IDE's will place an error asking you to surround it in a Try/Catch box, which is a type of error handling. This program will run fine, but will crash and throw an error if we enter anything other than a valid number.</p>
 
 		</div>
 

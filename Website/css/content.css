@@ -22,3 +22,15 @@
 .content p {
 	display: block;
 }
+
+.content i {
+	margin: 0;
+}
+
+.content a {
+	margin: 0;
+}
+
+.content em {
+	margin: 0;
+}
